@@ -1,166 +1,230 @@
 <!DOCTYPE html>
-<html lang=“en”>
-<head>
-    <meta charset="UTF-8">
-    <title>bouncy</title>
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Sans+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <section class="main__banner">
-        <div class="container">
-            <div class="nav">
-                <a class="nav-logo" href="#">
-                    <img src="img/logo.svg" alt="">
-                </a>
-                <ul class="nav-list">
-                    <li class="nav-list_item">
-                        <a href="#">Hello</a>
-                    </li>
-                    <li class="nav-list_item">
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-list_item">
-                        <a href="#">Team</a>
-                    </li>
-                    <li class="nav-list_item">
-                        <a href="#">Contact</a>
-                    </li>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>bouncy</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Sans+Pro:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="main__banner">
+            <div class="flex-row-menu">
+                <div class="header_logo">
+                    <img src="img/logo.svg" alt="Logo"/>
+                </div>
+                <div class="nav">
+                    <ul class="nav_menu">
+                        <li class="nav_menu_item">
+                            <a class="nav_menu_item_link" href="#">Hello</a>
+                        </li>
+                        <li class="nav_menu_item">
+                            <a  class="nav_menu_item_link"  href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav_menu_item">
+                            <a  class="nav_menu_item_link"  href="#team">Team</a>
+                        </li>
+                        <li class="nav_menu_item">
+                            <a  class="nav_menu_item_link"  href="#contact1">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container flex-center-vertically">      
+                    <h3 class="header_sect_title">We are code cafe
+                    </h3>
+                    <p class="header_sect_descr">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis<br/> praesentium voluptatum
+                    </p>
+                    <a href="#portfolio" class="header-scroll">
+                    <img src="img/scroll.svg" alt="scroll-arrow"/>
+                </a>    
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <div class="flex-center-vertically">
+                <h3 class="portfolio_header">The portfolio</h3>
+                <p class="portfolio_descr">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br/> blanditiis praesentium</p>
+            </div>
+            <div class="port_nav">
+                <ul class="portfolio_nav">
+                        <li class="portfolio_nav-item">
+                            <a class="portfolio_nav-item-link" href="#">All Works</a>
+                        </li>
+                        <li class="portfolio_nav-item">
+                            <a  class="portfolio_nav-item-link" href="#">Print</a>
+                        </li>
+                        <li class="portfolio_nav-item">
+                            <a  class="portfolio_nav-item-link"  href="#">Branding</a>
+                        </li>
+                        <li class="portfolio_nav-item">
+                            <a  class="portfolio_nav-item-link"  href="#">Web</a>
+                        </li>
+                        <li class="portfolio_nav-item">
+                            <a  class="portfolio_nav-item-link"  href="#">HTML</a>
+                        </li>
                 </ul>
             </div>
-            <div class="main__banner-content">
-                <h1 class="main__banner-title">
-                    WE ARE CODE CAFE
-                </h1>
-                <p class="main__banner-descr">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                </p>
-            </div>
-            <a class="main__banner-scroll" href="#portfolio"><img src="img/circ-btn.svg" alt=""></a>
-        </div>
-    </section>
- <!-- potfolio -->
-    <section class="portfolio" id="portfolio">
-        <h3 class="portfolio__header">The Portfolio</h3>
-        <h4 class="portfolio__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Distinctio laudantium amet recusandae</h4>  
-        <ul class="portfolio__nav">
-            <li class="portfolio__nav-item">
-                <a href="#">All works</a>
-            </li>
-            <li class="portfolio__nav-item">
-                <a href="#">Print</a>
-            </li>
-            <li class="portfolio__nav-item">
-                <a href="#">Branding</a>
-            </li>
-            <li class="portfolio__nav-item">
-                <a href="#">Web</a>
-            </li>
-            <li class="portfolio__nav-item">
-                <a href="#">HTML</a>
-            </li>
-        </ul>
-        <div class="grid">
-        <div class="grid">
-            <div class="grid-item"></div>
-            <div class="grid-item grid-item--width2"></div>
-            <div class="grid-item grid-item--height2"></div>
-        </div>
-            <img src="img/img1_1.jpg" alt="">
-            <img src="img/img1_2.jpg" alt="">
-            <img src="img/img1_3.jpg" alt="">
-            <img src="img/img1_4.jpg" alt="">
-            <img src="img/img2_1.jpg" alt="">
-            <img src="img/img2_2.jpg" alt="">
-            <img src="img/img2_3.jpg" alt="">
-            <img src="img/img2_4.jpg" alt="">
-            <img src="img/img3_1.jpg" alt="">
-            <img src="img/img3_2.jpg" alt="">
-            <img src="img/img3_3.jpg" alt="">
-            <img src="img/img3_4.jpg" alt="">
-        </div>
-    </section>
-<!-- team -->
-    <section class="team">
-        <div class="container">
-            <h2 class="section__title">THE TEAM</h2>
-            <h3 class="section__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel blanditiis minus quidem quod, ipsum reiciendis officia rem maxime repellat itaque, sunt. Aliquid voluptas debitis eius, quibusdam beatae ut, iste ex.</h3>
-        </div>
-        <div class="team__slider-wrapper">
-           <div class="team__slider-container">
-                <div class="team__slider">
-                   <img class="team__slider-img" src="img/team-member1.jpg" alt="">
-                   <div class="team__slider-content">
-                       <div class="team__slider-header">
-                           <h4 class="team__slider-name">Abdullah Noman</h4>
-                           <h5 class="team__slider-position">Creative Director, Code Cafe</h5>
-                       </div>
-                       <p class="team__slider-descr">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt magni porro sit labore iusto accusantium, molestiae dignissimos officia possimus inventore temporibus voluptatibus reiciendis hic saepe soluta facere repellendus voluptates. Nemo.
-                        </p>
+            <div class="flex_snake">
+                <div class="flex-img">
+                    <img src="img/img1.jpg" alt="img"/>
+                    <img src="img/img2.jpg" alt="img"/>
+                    <img src="img/img3.jpg" alt="img"/>
+                </div>
+                <div class="flex-img">
+                    <img src="img/img4.jpg" alt="img"/>
+                    <img src="img/img5.jpg" alt="img"/>
+                    <img src="img/img6.jpg" alt="img"/>
+                </div>
+                <div class="flex-img">
+                    <img src="img/img7.jpg" alt="img"/>
+                    <img src="img/img8.jpg" alt="img"/>
+                    <img src="img/img9.jpg" alt="img"/>
+                </div>
+                <div class="flex-img">
+                    <img src="img/img10.jpg" alt="img"/>
+                    <img src="img/img11.jpg" alt="img"/>
+                    <img src="img/img12.jpg" alt="img"/>
+                </div>
+            </div>  
+        </section>
+        <section class="team" id="team">
+            <div class="team_flex-center">
+                <h4 class="team_header">THE TEAM</h4>
+                <p class="team_descr">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br/>blanditiis praesentium</p>
+            </div>  
+            <div class="team_content">
+                <div data-id = "1" class = "j_slider">
+                    <div class="team_content-img">
+                        <img src="img/person_01.jpg" alt="img"/>
+                    </div>
+                    <div class="team_content-descr">
+                        <div class="team_content-green">
+                            <h4 class="team_content-descr-header">Abdullah Noman</h4>
+                            <h5 class="team_content-descr-subheader"><i>Creative Director, Code Cafe</i></h5>
+                        </div>  
+                        <p class="team_content-descr-text">At vero eos et accusamus et iusto odio dignissimos <br/> ducimus qui blanditiis praesentium. At vero eos et <br/>accusamus et iusto odio dignissimos ducimus qui <br/> blanditiis praesentium. At vero eos et <br/> accusamus et iusto odio dignissimos ducimus qui blanditiis prae<br/>sentium. At vero eos et accusamus et iusto odio <br/> dignissimos ducimus qui blanditiis praesentium. At <br/> vero eos et accusamus et iusto odio dignissimos<br/> ducimus qui blanditiis praesentium.</p>
                     </div>
                 </div>
-                <div class="team__slider">
-                    <img class="team__slider-img" src="img/team-member1.jpg" alt="">
-                    <div class="team__slider-content">
-                       <div class="team__slider-header">
-                           <h4 class="team__slider-name">Abdullah Noman</h4>
-                           <h5 class="team__slider-position">Creative Director, Code Cafe</h5>
-                       </div>
-                       <p class="team__slider-descr">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores modi id sed excepturi omnis adipisci. Maiores est quo, tempore, recusandae labore unde autem eveniet quibusdam placeat fugit iure veniam itaque?
-                        </p>
+                <div data-id = "2" class = "j_slider hidden">
+                    <div class="team_content-img">
+                        <img src="img/person_01.jpg" alt="img"/>
+                    </div>
+                    <div class="team_content-descr">
+                        <div class="team_content-green">
+                            <h4 class="team_content-descr-header">Person 02</h4>
+                            <h5 class="team_content-descr-subheader"><i>Job description 02</i></h5>
+                        </div>  
+                        <p class="team_content-descr-text">At vero eos et accusamus et iusto odio dignissimos <br/> ducimus qui blanditiis praesentium. At vero eos et <br/>accusamus et iusto odio dignissimos ducimus qui <br/> blanditiis praesentium. At vero eos et <br/> accusamus et iusto odio dignissimos ducimus qui blanditiis prae<br/>sentium. At vero eos et accusamus et iusto odio <br/> dignissimos ducimus qui blanditiis praesentium. At <br/> vero eos et accusamus et iusto odio dignissimos<br/> ducimus qui blanditiis praesentium.</p>
                     </div>
                 </div>
-                <div class="team__slider">
-                    <img class="team__slider-img" src="img/team-member1.jpg" alt="">
-                    <div class="team__slider-content">
-                       <div class="team__slider-header">
-                           <h4 class="team__slider-name">Abdullah Noman</h4>
-                           <h5 class="team__slider-position">Creative Director, Code Cafe</h5>
-                       </div>
-                       <p class="team__slider-descr">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ipsam voluptatum nulla, excepturi consequatur, animi dolorem quod necessitatibus saepe fuga ut accusamus molestiae perferendis repellendus consectetur harum. Consequuntur, repudiandae incidunt!
-                        </p>
+                <div data-id = "3" class = "j_slider hidden">
+                    <div class="team_content-img">
+                        <img src="img/person_01.jpg" alt="img"/>
+                    </div>
+                    <div class="team_content-descr">
+                        <div class="team_content-green">
+                            <h4 class="team_content-descr-header">Person 03</h4>
+                            <h5 class="team_content-descr-subheader"><i>Job description 03</i></h5>
+                        </div>  
+                        <p class="team_content-descr-text">At vero eos et accusamus et iusto odio dignissimos <br/> ducimus qui blanditiis praesentium. At vero eos et <br/>accusamus et iusto odio dignissimos ducimus qui <br/> blanditiis praesentium. At vero eos et <br/> accusamus et iusto odio dignissimos ducimus qui blanditiis prae<br/>sentium. At vero eos et accusamus et iusto odio <br/> dignissimos ducimus qui blanditiis praesentium. At <br/> vero eos et accusamus et iusto odio dignissimos<br/> ducimus qui blanditiis praesentium.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-<!-- promo -->
-    <section class="promo">
-    </section>
-<!-- testimonials -->
-    <section class="testimonials">
-    </section>
-<!-- contact -->
-    <section class="contact">
-
-    </section>
-    <footer>
-        <div class="container">
-            <div class="footer__">
-                <div class="footer__logo">
-                    <img src="img/footer-logo.svg" alt="">
+            </div>  
+        </section>
+        <section class="contact" id="contact">
+            <div class="contact_center">
+                <h3 class="contact_center-header">Already Loved Us? Let’s talk!</h3>
+                <button class="contact_btn">
+                    <a href="#contact1">Contact Us</a>
+                </button>
+            </div>  
+        </section>
+        <section class="testimonials">
+            <div class="grey_bg">
+                <div class="t_header">
+                    <h2 class="test_header">Testimonials</h2>
+                    <p class="test_descr">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br/>blanditiis praesentium</p>
                 </div>
-                <div class="footer__copyright">
-                    Copyright 2015. All rights Reserved
+                <div data-id = "1" class = "j_slider2 feedback">
+                    <div class="feedback_img">
+                        <img src="img/person_02.jpg" alt="img"/>
+                    </div>
+                    <div class="feedback_descr">
+                        <p class="feedback_text">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vo<br/>luptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cu<br/>piditate non provident, similique sunt in culpa qui officia deserunt mollitia.
+                        </p>
+                        <h5 class="feedback_header">PARTHO</h5>
+                        <h6 class="feedback_subheader">FOUNDER, ARTWAYS BD</h6>
+                    </div>
                 </div>
-                <ul class="footer__social">
-                    <li><a href=""><img src="img/footer-facebook.svg" alt=""></a></li>
-                    <li><a href=""><img src="img/foooter-twitter.png" alt=""></a></li>
-                    <li><a href=""><img src="img/foooter-linkedin.svg" alt=""></a></li>
-                    <li><a href=""><img src="img/foooter-instagram.svg" alt=""></a></li>
-                    <li><a href=""><img src="img/foooter-vimeo.svg" alt=""></a></li>
-                </ul>
+                    <div data-id = "2" class = "j_slider2 feedback hidden">
+                        <div class="feedback_img">
+                            <img src="img/person_02.jpg" alt="img"/>
+                        </div>
+                        <div class="feedback_descr">
+                            <p class="feedback_text">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vo<br/>luptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cu<br/>piditate non provident, similique sunt in culpa qui officia deserunt mollitia.
+                            </p>
+                            <h5 class="feedback_header">feeedback_person_02</h5>
+                            <h6 class="feedback_subheader">Position 02</h6>
+                        </div>
+                    </div>
+                    <div data-id = "3" class = "j_slider2 feedback hidden">
+                        <div class="feedback_img">
+                            <img src="img/person_02.jpg" alt="img"/>
+                        </div>
+                        <div class="feedback_descr">
+                            <p class="feedback_text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. 
+                            </p>
+                            <h5 class="feedback_header">feeedback_person_03</h5>
+                            <h6 class="feedback_subheader">Position 03</h6>
+                        </div>
+                    </div>
+            </div>      
+        </section>
+        <section class="contact1" id="contact1">
+            <div class="contact_header1">
+                    <h2 class="cont_header1">Contact Us</h2>
+                    <p class="cont_descr1">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br/> blanditiis praesentium</p>
+                </div>
+            <div id="map" class="address_map">
             </div>
-        </div>
-    </footer>
-    <script async src="https://maps.googleapis.com/maps/api/js"></script>   
+        </section>
+        <section class="footer">
+            <div class="footer-center">
+                <img src="img/logo_black.svg" alt="img"/>
+                <p class="footer-text">Copyright 2015. All rights Reserved</p>
+                <div class="footer_social-media">
+                    <ul class="s_media">
+                        <li class="media_item">
+                            <a class="media_item_link" href="#"><img src="img/facebook.jpg" alt="img"></a>
+                        </li>
+                        <li class="media_item">
+                            <a class="media_item_link" href="#"><img src="img/twitter.jpg" alt="img"></a>
+                        </li>
+                        <li class="media_item">
+                            <a class="media_item_link" href="#"><img src="img/linkedin.jpg" alt="img"></a>
+                        </li>
+                        <li class="media_item">
+                            <a class="media_item_link" href="#"><img src="img/instagram.jpg" alt="img"></a>
+                        </li>
+                        <li class="media_item">
+                            <a class="media_item_link" href="#"><img src="img/vimeo.jpg" alt="img"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    <script async src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/slider.js"></script>
-    <script src="js/map.js"></script> 
-</body>
+    <script src="js/map.js"></script>   
+    </body>
 </html>

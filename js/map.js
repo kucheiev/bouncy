@@ -12,6 +12,7 @@ $(window).load(function(){
 	var $marker = new google.maps.Marker({
 		position: $coordinates,
 		map: $map,
+		icon: 'img/marker.svg'
 	});
 
 
@@ -24,4 +25,3 @@ $(window).load(function(){
 });	
 
 })(jQuery);
-
